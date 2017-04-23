@@ -1,2 +1,2 @@
 # Website
-The website of/for/and made by CodeGorilla's
+The website of/for/by CodeGorilla's
