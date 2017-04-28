@@ -1,0 +1,86 @@
+
+Right login -
+
+Input
+
+/api/authenticate
+
+POST { "username" : "user", "password": "pass" }
+
+Output
+
+STATUS CODE 200 { "message" : "User is logged in" };
+______________________
+
+Wrong username -
+
+Input
+
+/api/authenticate
+
+POST {"username": "user3", "password": "pass"}
+
+Output
+
+STATUS CODE 401 { "message":"Gebruikersnaam of wachtwoord is fout" };
+
+______________________
+
+
+Empty password -
+
+Input
+
+/api/authenticate
+
+POST {"username": "user", "password": ""}
+
+Output
+
+STATUS CODE 417 { "message":"Gebruikersnaam of wachtwoord is fout" };
+
+______________________
+
+
+Empty username and password - 
+
+Input
+
+/api/authenticate
+
+POST {"username": "", "password": ""}
+
+Output
+
+STATUS CODE 417 { "message":"Gebruikersnaam of wachtwoord is fout" };
+
+______________________
+
+
+Too many attempts  - 
+
+Input
+
+/api/authenticate
+
+POST {"username": "user3", "password": "pass"}
+
+Output
+
+STATUS CODE 429 { "message":"U heeft teveel poging gedaan" };
+
+______________________
+
+Too long password  
+
+Input
+
+/api/authenticate
+
+POST {"username": "user", "password": "123456789codegorillabluered&greenweeetbananas"}
+
+Output
+
+STATUS CODE 411 { "message":"U heeft niet voldaan aan wachtwoord verplichtingen" };
+
+______________________
