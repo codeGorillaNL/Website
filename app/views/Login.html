@@ -14,9 +14,10 @@
 <div class="home">
 <div class="input-field">
 <li>  <label>
-    &lt;User-name:
+    &lt; User-name:
   </label>
-  <input class=field type="" size=40 name="username" ng-model="user.name" /> /&gt;
+  <div class="angle-brackets">/&gt;</div>
+  <input class=field type="" size=25 name="username" ng-model="user.name" />
 </div>
 
 <div class="home">
@@ -24,18 +25,17 @@
 <li>  <label>
     &lt;Last-name:
   </label>
-  <input class=field type="password" size=40 name="password" ng-model="user.password"/>  /&gt;
+  <div class="angle-brackets">/&gt;</div>
+  <input class=field type="password" size=25 name="password" ng-model="user.password"/>
 </div>
 <p>
   <p>
 <div class="home">
-<div class="button">
+<div class="button" align="middle">
   <button ng-click="login.submit(user)">Send</button>
   <P>
     <P>
   <a ng-href="registration">Registration</a>
-  <p>
-    <P>
   <a ng-href="forgotpassword">forgot password?</a>
 
 
