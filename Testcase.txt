@@ -17,56 +17,77 @@ Inlogscherm
 	- Email
 	
 - Inloggen
-POST
-/api/login
+	
+	Input:
+	
+		POST
+			/api/login
 
-{
-	“username” : “Rene”,
-	“password” : “T3STc@s3”
-}
+			{
+				“username” : “Rene”,
+				“password” : “T3STc@s3”
+			}
 
-Output:
-{{name : “Rene”, surname ; “de Groot”}
+	Output:
+		{{name : “Rene”, surname ; “de Groot”}
+
+
 
 - User onbekend:
-Input:
-?action=login&username=“Renee”&password=“T3stc@s3”
 
-Output:
-{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+	Input:
 
+	Output:
+	
+		{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+
+
+		
 - User wachtwoord onbekend:
-Input:
-?action=login&username=“Rene”&password=“T3STc@s3”
 
-POST
-/api/login
+	Input:
 
-{
-	“username” : “Rene”,
-	“password” : “T3STc@s3”
-}
+		POST
+			/api/login
 
-Output:
-{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+			{
+				“username” : “Rene”,
+				“password” : “T3STc@s3”
+			}
 
+	Output:
+	
+		{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+
+		
+		
 - User naam verkeerde karakters
-Input:
-?action=login&username=“R#ne”&password=“T3stc@s3”
 
-Output:
-{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+	Input:
 
+	Output:
+	
+		{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+
+
+		
 - User wachtwoord teweinig karakters
-Input:
-?action=login&username=“Rene”&password=“T3st3”
 
-Output:
-{{405 Method Not Allowed “Een wachtwoord moet uit een combinatie van minimaal 8 en maximaal 15 letters en cijfers bestaan, en moet minimaal 6 letters en 2 cijfers bevatten.”}
+	Input:
 
+	Output:
+	
+		{{405 Method Not Allowed “Een wachtwoord moet uit een combinatie van minimaal 8 en maximaal 15 letters en cijfers bestaan, en moet minimaal 6 letters en 2 cijfers bevatten.”}
+
+
+		
+		
 - User wachtwoord verkeerde karakters
-Input:
-?action=login&username=“Rene”&password=“T3stc@s3”
 
-Output:
-{{name : “Een wachtwoord moet uit een combinatie van minimaal 8 en maximaal 15 letters en cijfers bestaan, en moet minimaal 6 letters en 2 cijfers bevatten.”}
+	input:
+
+	Output:
+	
+		{{name : “Een wachtwoord moet uit een combinatie van minimaal 8 en maximaal 15 letters en cijfers bestaan, en moet minimaal 6 letters en 2 cijfers bevatten.”}
+		
+		
