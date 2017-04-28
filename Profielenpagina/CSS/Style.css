@@ -1,0 +1,85 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/SourceCodePro-Bold.otf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../fonts/SourceCodePro-Regular.otf);
+}
+
+html
+body{
+  font-family: regular;
+	background-color: #77C4D7;
+}
+
+        {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: right;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 29px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cgbutton {
+  background-color: #E25054;
+  border: none;
+  padding: 1em;
+  color: white;
+  font-family: regular;
+  border-radius: 5px;
+}
+
+.cgbutton:hover{
+  background-color: #ed9194;
+
+}
+
+.gamestyling{
+  border-bottom: 2px solid black;
+
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 400px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#tagsfilter{
+  height: 30px;
+}
+
+.title {
+  color: white;
+}
+
+</body>
