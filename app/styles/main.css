@@ -1,0 +1,91 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/SourceCodePro-Bold.otf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../fonts/SourceCodePro-Regular.otf);
+}
+
+html
+body{
+  font-family: regular;
+	background-color: #77C4D7;
+}
+
+:focus {
+  outline: 0;
+}
+
+.home {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gorilla {
+  width: 33%;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  font-family: bold;
+}
+h2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  color: white;
+  font-family: bold;
+}
+
+p {
+  color: white;
+  font-family: regular;
+}
+
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  color: white;
+
+}
+
+.dotbox{
+  border:none;
+  border-bottom:thin dashed black;
+  outline:none;
+}
+
+.field {
+  background-color: #77C4D7;
+  border-top-style: none;
+ border-right-style: none;
+ border-bottom-style: dashed;
+ border-left-style: none;
+ float: right;
+}
+
+button{
+  background-color: #e25054;
+  border-radius: 8px;
+border: none;
+color: white;
+padding: 5px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
