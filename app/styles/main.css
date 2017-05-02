@@ -1,0 +1,211 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/SourceCodePro-Bold.otf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../fonts/SourceCodePro-Regular.otf);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#up{
+  flex-direction: column;
+  background-color: #77C4D7;
+}
+
+#down{
+  background-color: #e15054;
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  /*position: absolute;*/
+  /*top: 30px;
+  right: 50%;
+  left: calc(50% - 10px);*/
+  margin-top: 30px;
+  z-index: 999;
+}
+
+.dropdownmenu {
+  background-color: #e15054;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 0;
+  /*z-index: -1;*/
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+
+}
+
+.dropdownmenu.expanded {
+  height: 100px;
+  width: 100vw;
+}
+
+.dropdown img{
+  width: 20px;
+  height: 20px;
+}
+
+.linkbutton {
+  background-color: #77C4D7;
+  border-radius: 8px;
+border: none;
+color: white;
+padding: 4px 6px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin-right: 30px;
+font-size: 16px;
+margin-top: 30px;
+margin-left: 50px;
+}
+
+.linkbutton:hover{
+  background: #77C4D7;
+  color: #e15054;
+}
+
+.homebutton {
+  height: 10vh;
+  width: auto;
+  margin-left: 50px;
+}
+
+/*html*/
+body {
+  font-family: regular;
+	background-color: #77C4D7;
+  padding-top: 100px;
+}
+
+div[ng-view] {
+  transition: all 1s ease-in-out;
+}
+
+div[ng-view].expanded {
+  transform: translateY(50px);
+}
+
+.videogorilla {
+  height: 50vh;
+  position: 
+}
+
+.video{
+  height: 75%;
+}
+
+
+:focus {
+  outline: 0;
+}
+
+.home {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gorilla {
+  width: 33%;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  font-family: bold;
+}
+h2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: white;
+  font-family: bold;
+}
+
+h4 {
+  color: white;
+  font-family: bold;
+}
+
+p {
+  color: white;
+  font-family: regular;
+  line-height: 90%;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  color: white;
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+
+}
+
+.dotbox {
+  border:none;
+  border-bottom:thin dashed black;
+  outline:none;
+}
+
+.field {
+  background-color: #77C4D7;
+  border-top-style: none;
+ border-right-style: none;
+ border-bottom-style: dashed;
+ border-left-style: none;
+ float: right;
+}
+
+button{
+  background-color: #e25054;
+  border-radius: 8px;
+border: none;
+color: white;
+padding: 5px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+.end {
+  float:right;
+}
+
+.angle-brackets{
+    float:right;
+}
