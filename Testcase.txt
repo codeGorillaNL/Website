@@ -2,7 +2,7 @@ Testcase
 
 Inlogscherm
 	- User-name
-	- Last-name
+	- Password
 
 	- User-name
 	- Password
@@ -29,7 +29,8 @@ Inlogscherm
 			}
 
 	Output:
-		{{name : “Rene”, surname ; “de Groot”}
+	
+		{{200 OK name : “Rene”, surname ; “de Groot”}
 
 
 
@@ -39,7 +40,7 @@ Inlogscherm
 
 	Output:
 	
-		{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+		{{401 Unauthorized “Gebruikersnaam of wachtwoord onbekend”}
 
 
 		
@@ -57,7 +58,7 @@ Inlogscherm
 
 	Output:
 	
-		{{400 Bad Request “Gebruikersnaam of wachtwoord onbekend”}
+		{{401 Unauthorized “Gebruikersnaam of wachtwoord onbekend”}
 
 		
 		
@@ -84,7 +85,7 @@ Inlogscherm
 		
 - User wachtwoord verkeerde karakters
 
-	input:
+	Input:
 
 	Output:
 	
