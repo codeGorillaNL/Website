@@ -50,7 +50,7 @@ angular
 
       .when('/registration', {
         templateUrl: 'views/registration.html',
-        controller: 'registrationCtrl',
+        controller: 'RegistrationCtrl',
         controllerAs: 'registration'
         })
 

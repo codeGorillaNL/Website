@@ -1,78 +1,67 @@
-    <body>
-    <div class="figure" align="middle">
-    <p><img src="images/codegorilla.png" width="auto"
-      height="250" alt="codegorilla">
-    <p></p>
-    </div>
+<div class="figure" align="middle">
+  <img src="images/codegorilla.png" width="auto" height="250" alt="codegorilla">
+</div>
 
-    <h2> Registration </h2>
+<h2> Registration </h2>
 
-
-    <form class="html" name="registration" onSubmit="return formValidation();">
-    <P>
+  <form class="html" name="registration">
     <ul>
-    <form>
-
-    <li><label for="username">&lt;User-name:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" class="text" name="gebruikersnaam" size="30" />
-    <P></p>
-
-    <li><label for="password">&lt;Password:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="password" size="30" />
-    <P></p>
-
-    <li><label for="name">&lt;First-name:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="Name" size="30" />
-    <P></p>
-
-    <li><label for="lastname">&lt;Last-name:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="lastname" size="30" />
-    <P></p>
-
-    <li><label for="company">&lt;Company:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="company" size="30" />
-    <P></p>
-
-    <li><label for="adres">&lt;Adress:</label>
+      <li>
+        <label for="username">&lt;User-name:</label>
+        <div class="angle-brackets">/&gt;</div>
+        <input class=field type="text" class="text" ng-model="user.username" name="gebruikersnaam" size="30" />
+      </li>
+    <li>
+      <label for="password">&lt;Password:</label>
       <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="adres" size="30" />
-    <P></p>
-
-    <li><label for="country">&lt;Country:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="country" size="30" />
-    <P></p>
-
-    <li><label for="postalcode">&lt;Postal code:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="postalcode" size="30" />
-    <label class="end" /&gt;> </label>
-    <P></p>
-
-    <li><label for="caberofcommerce">&lt;COC number:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="caberofcommerce" size="30" />
-    <P></p>
-
-    <li><label for="phone">&lt;Phone:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="phone" size="30" />
-    <P></p>
-
-    <li><label for="email">&lt;Email:</label>
-    <div class="angle-brackets">/&gt;</div>
-    <input class=field type="text" name="email" size="30" />
-    <P></p>
-
-
-    <div class="home">
-    <div class="button">
-    <button ng-click="login.submit(user)">Registration</button>
-
-    </form>
-    <body>
+      <input class=field type="text" ng-model="user.password" name="password" size="30" />
+    </li>
+    <li>
+      <label for="name">&lt;First-name:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="Name" size="30" />
+   </li>
+    <li>
+      <label for="lastname">&lt;Last-name:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="lastname" size="30" />
+    </li>
+    <li>
+      <label for="company">&lt;Company:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="company" size="30" />
+    </li>
+    <li>
+      <label for="adres">&lt;Adress:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="adres" size="30" />
+    </li>
+    <li>
+      <label for="country">&lt;Country:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="country" size="30" />
+    </li>
+    <li>
+      <label for="postalcode">&lt;Postal code:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="postalcode" size="30" />
+      <label class="end" /&gt;> </label>
+    </li>
+    <li>
+      <label for="caberofcommerce">&lt;COC number:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="chamberOfCommerce" size="30" />
+    </li>
+    <li>
+      <label for="phone">&lt;Phone:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="phone" size="30" />
+    </li>
+    <li>
+      <label for="email">&lt;Email:</label>
+      <div class="angle-brackets">/&gt;</div>
+      <input class=field type="text" name="email" size="30" />
+    </li>
+    <button ng-click="submit(user)">Registration</button>
+  </ul>
+</form>

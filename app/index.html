@@ -1,6 +1,5 @@
-<!doctype html>
-<html>
-  <head>
+    <!doctype html>
+    <head>
     <meta charset="utf-8">
     <title>Code Gorilla</title>
     <base href="/" target="_blank">
@@ -16,22 +15,26 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="codeGorillaApp">
+    </head>
+    <body ng-app="codeGorillaApp">
 
     <nav class="menu">
-         <ul class="hamburger">
-            <li class="dropdown" ng-mouseenter="showMenu = true" >
-              <img src="images/HamburgerBarICON.png" alt="Menu button">
-            </li>
-              <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a> -->
-              <ul class="dropdownmenu" ng-class="{'expanded': showMenu}" ng-mouseleave="showMenu = false">
-                <a ng-href="/"><img src="images/home button.png" class="homebutton"/></a>
-                <a class=linkbutton ng-href="/login">login</a>
-                <a class=linkbutton ng-href="/profile">Profile</a>
-    			      <a class=linkbutton ng-href="/contact">Contact</a>
-              </ul>
-          </ul>
+    <ul class="hamburger">
+    <li class="dropdown" ng-mouseenter="showMenu = true" >
+    <img src="images/HamburgerBarICON.png" alt="Menu button">
+    </li>
+    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a> -->
+    <ul class="dropdownmenu" ng-class="{'expanded': showMenu}" ng-mouseleave="showMenu = false">
+    <a ng-href="/"><img src="images/home button.png" class="homebutton"/></a>
+    <a class=linkbutton ng-href="/login">login</a>
+    <a class=linkbutton ng-href="/profile">Profile</a>
+    <a class=linkbutton ng-href="/contact">Contact</a>
+    <a ng-href="https://www.facebook.com/CodeGorillaNL/"><img src="socialmedia/facebook.png" class="socialmedia"/></a>
+    <a ng-href="https://www.linkedin.com/company-beta/17908501/"><img src="socialmedia/linkedin.png" class="socialmedia"/></a>
+    <a ng-href="/"><img src="socialmedia/youtube.png" class="socialmedia"/></a>
+    <a ng-href="https://twitter.com/search?q=codegorilla&src=typd&lang=nl"><img src="socialmedia/twitter.png" class="socialmedia"/></a>
+
+    </ul>
     </nav>
 
     <div ng-view="" ng-class="{'expanded': showMenu}"></div>
@@ -61,8 +64,8 @@
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/profile.js"></script>
         <!-- endbuild -->
-        <script src="scripts/startOnScroll.js"></script>
+   <script src="scripts/startOnScroll.js"></script>
 
 
-</body>
-</html>
+    </body>
+    </html>
