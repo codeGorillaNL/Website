@@ -1,0 +1,68 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: lightblue ;
+}
+
+#gameBoundingBox{
+	position: relative;
+	width: 100%;
+	height: 900px;
+
+}
+
+#gameWithDecoration{
+	position: absolute;
+	background-color: red;
+	width:1024px;
+	height:600px;
+	left: 50%;
+	top: 250px; 
+	-webkit-transform: translate(-50%, 0%); 
+	transform: translate(-50%, 0%);
+}
+
+#head{
+	position: absolute;
+	top:350px;
+	width:600px;
+	height:600px;
+    left:50%;
+	-webkit-transform: translate(-50%, 0%); 
+	transform: translate(-50%, -100%);
+	z-index:-1;
+}
+
+#leftHand{
+	position: absolute;
+	left:120px;
+	width:300px;
+	height:300px;
+	-webkit-transform: translate(-100%, 50%); 
+	transform: translate(-100%, 50%);
+	z-index:2;
+}
+
+#rightHand{
+	position: absolute;
+	right:120px;
+	width:300px;
+	height:300px;
+	-webkit-transform: translate(100%, 50%); 
+	transform: translate(100%, 50%);
+	z-index:2;
+}
+
+#gameCanvas{
+	border: 5px solid black;
+	position: absolute;
+	background-color: white;
+	width:100%;
+	height:100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%); 
+	transform: translate(-50%, -50%);
+	z-index:1;
+	cursor: grab;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <link rel="stylesheet" href="CSS\BananaGameStyle.css">
+	<script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build06.json", {onProgress: UnityProgress});
+    </script>
+
+</head>
+
+<body>
+
+<div id="gameBoundingBox">
+
+	<div id="gameWithDecoration">
+		<img src="images/codegorilla.png" alt="Gorilla Head IMG" id="head">
+		<img src="images/codegorilla_hand_left.png" alt="Gorilla Head IMG" id="leftHand">
+		<img src="images/codegorilla_hand_right.png" alt="Gorilla Head IMG" id="rightHand">
+
+		<div id="gameCanvas">
+			<div id="gameContainer" style="width: 100%; height: 100%;"></div>
+		</div>
+		
+	</div>
+
+</div>
+
+<script src="BananaFunctions.js"></script>
+
+
+</body>
+</html>
